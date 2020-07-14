@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Image/bg-desktop.svg);
+    background-size:100% ;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    line-height:1.6;
+    letter-spacing:2px;
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight:400;
+    opacity:.7;
+    margin-bottom:20px;
+    line-height:1.4;
+    letter-spacing:.5px;
+}
+header img{
+    padding-left:60px ;
+    padding-top: 40px;
+
+}
+
+main{
+    display: flex;
+}
+
+.left{
+    padding: 70px 60px;
+    width: 50%;
+}
+
+
+.right{
+    width: 50%;
+    color: #fff;
+    text-align: left;
+    padding: 5% 5%;
+}
+
+button{
+  width: 200px;
+  height:60px;
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  font-size: larger;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 0;
+  box-shadow: 2px 2px 7px #333;
+
+  
+}
+
+footer{
+    color: #fff;
+    text-align: right;
+    padding: 0 75px 50px;
+    
+}
+
+.fab{
+    padding: 0 10px;
+}
+.attribution{
+    width: 100%;
+    background-color: #fff;
+    font-size: 20px;
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+}
+
+@media (max-width:710px){
+    
+    section{
+        background-image: url(../Image/bg-mobile.svg);
+    }
+    
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    header img{
+        width: 180px;
+        padding-left:60px ;
+        padding-top: 40px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right{
+        margin-top: 0;
+    }
+
+    .left img{
+        width: 100%;
+    }
+
+    button{
+        margin: 0 auto;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+}
